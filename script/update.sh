@@ -111,7 +111,7 @@ else
       echo -e "\033[34m$SERVICENAME的状态为:\033[0m\033[33m$CURRENT_STATUS \033[0m,\033[34m即将删除旧的\033[0m\033[33m$SERVICENAME\033[0m\033[34m容器\033[0m"
     else
       echo -e "\033[33m出现问题，请联系系统管理员。。。\033[0m"
-      echo -e "\003[33m联系电话：158-1052-5074 \033[0m"
+      echo -e "\003[33m联系电话： \033[0m"
       exit 1
     fi
     docker rm $SERVICENAME  >> /dev/null
@@ -121,7 +121,7 @@ else
       echo -e "\033[34m即将启动您上传的服务:\033[0m\033[33m$JAR\033\0m"
     else
       echo -e "\033[34m出现问题，请联系系统管理员。。。\033[0m"
-      echo -e "\003[34m联系电话：158-1052-5074 \033[0m"
+      echo -e "\003[34m联系电话： \033[0m"
       exit 1
     fi
     SERVICE_START
